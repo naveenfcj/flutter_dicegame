@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -53,6 +54,7 @@ class _DicePageState extends State<DicePage> {
     return Center(
       child: Row(
         children: <Widget>[
+          SizedBox(width:16.0),
           Expanded(
             child: FlatButton(
               color: Color(leftcol),
@@ -62,6 +64,7 @@ class _DicePageState extends State<DicePage> {
               },
             ),
           ),
+          SizedBox(width:12.0),
           Expanded(
             child: FlatButton(
               color: Color(rightcol),
@@ -71,6 +74,7 @@ class _DicePageState extends State<DicePage> {
               },
             ),
           ),
+          SizedBox(width:16.0),
         ],
       ),
     );
